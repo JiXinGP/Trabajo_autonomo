@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fortnite Esports - Mural de Opiniones</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Animación para el título */
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        h1 {
+            animation: slideIn 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Fortnite Esports</h1>
+        <nav class="nav-right">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="opinions.html">Mural de Opiniones</a></li>
+                <li><a href="form.html">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="titulo">Mural de Opiniones</h2>
+            <div id="opinionsContainer"></div>
+        </section>
+    </main>
+
+    <div id="successAlert" class="alert alert-success d-none">Opinión enviada</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
